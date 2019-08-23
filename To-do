@@ -1,0 +1,13 @@
+ - creation du projet avec composer:
+         composer create-project --prefer-dist laravel/laravel CRM
+ - configuration du fichier .env
+         DB_CONNECTION=pgsql ==> nom de la connexion
+         DB_HOST=127.0.0.1 ==> postgresql host
+         DB_PORT=5432
+         DB_DATABASE=crm  ==> nom de la base de données
+         DB_USERNAME=postgres   ==> user name
+         DB_PASSWORD=postgres  ==> password
+
+ configuration de la base de données
+  - commencer par la creation du model contact avec la generation e la migration
+    php artisan make:model ModelName --migration
